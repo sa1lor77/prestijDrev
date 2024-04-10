@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Престиж Древ</title>
+    <link rel="shortcut icon" href="/image/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__up">
+        <div class="header__up-container container">
+          <div class="header__up-info up__info">
+            <div class="up__info-address info__address">
+              <img
+                src="/image/address__img.svg"
+                alt=""
+                class="info__address-img"
+              />
+              <h4 class="info__adress-location">
+                Каменский район, Старая Станица, ул. Будённого, 267
+              </h4>
+              <img
+                src="/image/partition.svg"
+                alt=""
+                class="info__address-partition"
+              />
+            </div>
+            <div class="up__info-time info__time">
+              <img src="/image/time__img.svg" alt="" class="info__time-img" />
+              <h4 class="info__time-text">Режим работы: с 8:00 до 17:00</h4>
+              <img
+                src="/image/partition.svg"
+                alt=""
+                class="info__time-partition"
+              />
+            </div>
+            <div class="up__info-number info__number">
+              <img
+                src="/image/number__img.svg"
+                alt=""
+                class="info__number-img"
+              />
+              <a href="tel:+79604444341" class="info__number-phone">
+                +7 (960) 444-43-41
+              </a>
+            </div>
+            <a class="up__info-ordered" href="#description">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__down">
+        <div class="header__down-container container">
+          <div class="header__down-box header__box">
+            <a class="header__logo" href="">
+              <img class="header__link" src="/image/logo.svg" alt="logo" />
+            </a>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#product" class="menu__link">Каталог продукции</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#about" class="menu__link">О компании</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#advantage" class="menu__link">Полезно знать</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#portfolio" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#footer" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="description" id="description">
+      <div class="description__container container">
+        <div class="description__content content">
+          <div class="content__left">
+            <h1 class="content__left-title">Престиж Древ</h1>
+            <p class="content__left-text">
+              Мастерская «Престиж ДРЕВ» выполняет работы любой сложности и
+              объема из дерева и металла. У нас трудятся: столяры, дизайнеры,
+              художники, маляры, шлифовщики, сборщики, реставраторы, которые
+              готовы взяться за индивидуальный заказ. Каждое изделие приобретает
+              эксклюзивный облик.
+            </p>
+          </div>
+
+          <div class="content__right">
+            <form action="" class="content__right-form form">
+              <h3 class="content__right-title">
+                Хотите узнать точную стоимость?
+              </h3>
+              <div class="form__name-box">
+                <label class="form__name-label" for="name">Ваше имя</label>
+                <input
+                  class="form__name"
+                  name="name"
+                  type="text"
+                  placeholder="Имя"
+                />
+              </div>
+              <div class="form__phone-box">
+                <label class="form__phone-label" for="number"
+                  >Контактный телефон</label
+                >
+                <input
+                  class="form__phone"
+                  name="number"
+                  type="text"
+                  placeholder="+7 (___) ___ - __ - __"
+                />
+              </div>
+              <div class="form__button-box">
+                <button class="form__button" type="submit">
+                  Отправить заявку
+                </button>
+              </div>
+              <!-- <div class="form__policy">
+                <input type="checkbox" class="form__policy-checkbox" />
+                <p class="form__policy-text">
+                  Согласен
+                  <a class="form__policy-link" href=""
+                    >с политикой конфиденциальности</a
+                  >
+                </p>
+              </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="product">
+      <div class="products__container container">
+        <h2 class="products__title title">Каталог продукции</h2>
+        <ul class="products__grid">
+          <li class="products__grid-item grid__item">
+            <button type="button" class="grid__item-box">
+              <img
+                class="grid__item-img"
+                src="/image/grid__item-1.png"
+                alt=""
+              />
+              <h4 class="grid__item-title">Мебельный щит</h4>
+            </button>
+
+            <dialog class="grid__item-popup Modal popup">
+              <div class="popup__box">
+                <img
+                  class="popup__box-img"
+                  src="/image/popup/popup__img-1.jpg"
+                  alt=""
+                />
+                <div class="popup__box-info box__info">
+                  <div class="box__info-flex">
+                    <h3 class="box__info-title">Мебельный щит</h3>
+                    <button class="popup__box-btn-close">Закрыть</button>
+                  </div>
+                  <p class="box__info-text">
+                    Мебельные щиты пользуются сегодня большой популярностью.
+                    Высокую востребованность легко объяснить большим количеством
+                    преимуществ, например, практичность и долговечность. Не
+                    маловажным фактом являются экоматериалы, из которых он
+                    сделан. Для его производства применяются только натуральные
+                    породы дерева. Технология склеивания не требует агрессивных
+                    химических ингредиентов. Благодаря этому материал не
+                    выделяет токсичных веществ во время эксплуатации. Мебельный
+                    щит широко используется для изготовления лестниц,
+                    подоконников, перекрытий, корпусной мебели, для отделки
+                    интерьера. Мы производим сращенные и цельноламельные щиты из
+                    лиственных пород дерева: дуб, ясень, бук, ольха, липа.
+                  </p>
+                </div>
+              </div>
+            </dialog>
+          </li>
+
+          <li class="products__grid-item grid__item">
+            <button type="button" class="grid__item-box">
+              <img
+                class="grid__item-img"
+                src="/image/grid__item-2.png"
+                alt=""
+              />
+              <h4 class="grid__item-title">Мебель из дерева</h4>
+            </button>
+
+            <dialog class="grid__item-popup popup">
+              <div class="popup__box">
+                <img
+                  class="popup__box-img"
+                  src="/image/popup/popup__img-2.jpg"
+                  alt=""
+                />
+                <div class="popup__box-info box__info">
+                  <div class="box__info-flex">
+                    <h3 class="box__info-title">Мебель из дерева</h3>
+                    <button class="popup__box-btn-close">Закрыть</button>
+                  </div>
+                  <p class="box__info-text">
+                    Индивидуальная мебель из дерева (дуб, ольха, ясень, бук,
+                    сосна) с использованием МДФ и шпона – это то, в чем у нашей
+                    мастерской есть большой опыт. Более 10 лет мы создаем
+                    уникальные предметы мебели и деревянный декор для интерьера.
+                    Широкий спектр возможностей изготовления мебели из массива.
+                    Кухни, шкафы, барные стойки, гардеробные, комоды, тумбы,
+                    прихожие, столы и стулья, кровати. В создании мебели нами
+                    используются: резные элементы, созданные с помощью ЧПУ
+                    станков (балясины, карнизы и другие), поталь и золочение,
+                    состаривание, элементы, отлитые из латуни (ручки, декор),
+                    вставки стекла с заливным витражом или лазерная гравировка,
+                    металлические, кованные элементы, художественная ручная
+                    роспись. Это может быть мебель в классическом стиле или
+                    лофт. По мимо мебели из дерева мы создаём: лестницы, двери,
+                    арки, беседки, навесы. Возможны так же и крупные заказы
+                    корпусной мебели.
+                  </p>
+                </div>
+              </div>
+            </dialog>
+          </li>
+
+          <li class="products__grid-item grid__item">
+            <button type="button" class="grid__item-box">
+              <img
+                class="grid__item-img"
+                src="/image/grid__item-3.png"
+                alt=""
+              />
+              <h4 class="grid__item-title">Посуда из дерева</h4>
+            </button>
+
+            <dialog class="grid__item-popup popup">
+              <div class="popup__box">
+                <img
+                  class="popup__box-img"
+                  src="/image/popup/popup__img-3.jpg"
+                  alt=""
+                />
+                <div class="popup__box-info box__info">
+                  <div class="box__info-flex">
+                    <h3 class="box__info-title">Посуда из дерева</h3>
+                    <button class="popup__box-btn-close">Закрыть</button>
+                  </div>
+                  <p class="box__info-text">
+                    Мы изготавливаем большой ассортимент деревянной посуды из
+                    ясеня, бука, дуба и ольхи для красивой сервировки стола, из
+                    которого всегда можно собрать набор для подарка на юбилей,
+                    день рождения, на день учителя или 8 марта, родным,
+                    коллегам, друзьям. Идеальная гладкость, красивая,
+                    неповторимая текстура дерева, оригинальный дизайн — наши
+                    главные преимущества. Используем специальное пищевое масло с
+                    воском для защиты от влаги, пересыхания и растрескивания.
+                    Посуда украшается лазерной гравировкой по вашему желанию
+                    (рисунок, фирменный логотип, монограмма, дарственная
+                    надпись, поздравление или пожелание). Деревянная посуда
+                    нашего производства: менажницы, подносы, подставки под
+                    горячее, разделочные доски, тарелки и многое другое.
+                    Ассортимент постоянно пополняется. Наши изделия можно
+                    использовать не только для разных закусок и вкусностей, но и
+                    как интерьерную штучку для хранения украшений. Отличная идея
+                    для подарка!
+                  </p>
+                </div>
+              </div>
+            </dialog>
+          </li>
+
+          <li class="products__grid-item grid__item">
+            <button type="button" class="grid__item-box">
+              <img
+                class="grid__item-img"
+                src="/image/grid__item-4.png"
+                alt=""
+              />
+              <h4 class="grid__item-title">Заливной витраж</h4>
+            </button>
+
+            <dialog class="grid__item-popup popup">
+              <div class="popup__box">
+                <img
+                  class="popup__box-img"
+                  src="/image/popup/popup__img-4.jpg"
+                  alt=""
+                />
+                <div class="popup__box-info box__info">
+                  <div class="box__info-flex">
+                    <h3 class="box__info-title">Заливной витраж</h3>
+                    <button class="popup__box-btn-close">Закрыть</button>
+                  </div>
+                  <p class="box__info-text">
+                    Заливной витраж (контурный витраж) это технология декора
+                    стеклянных изделий с помощью цветных полимерных красок.
+                    Эскиз витражей разрабатываются индивидуально для каждой
+                    работы. После утверждения эскиза производится нанесение
+                    рельефного контура. Большой ассортимент цветов контура:
+                    черный, прозрачный, золотой, и другие варианты. В качестве
+                    наполнения используется лак множества тонов и оттенков, это
+                    делает изделие ярким и неповторимым. Также возможно
+                    использование разницы текстур стекла, с помощью добавки.
+                    Витражами заполняют оконные или дверные проемы, межкомнатные
+                    перегородки, витраж используется часто в шкафах-купе и
+                    кухонных фасадах. Так же с помощью витража можно создать
+                    уникальные рекламные вывески и потолки. Стоимость витража
+                    зависит от сложности эскиза, количества мелких элементов и
+                    наполненности рисунка цветом.
+                  </p>
+                </div>
+              </div>
+            </dialog>
+          </li>
+
+          <li class="products__grid-item grid__item">
+            <button type="button" class="grid__item-box">
+              <img
+                class="grid__item-img"
+                src="/image/grid__item-5.png"
+                alt=""
+              />
+              <h4 class="grid__item-title">Ковка и литьё</h4>
+            </button>
+
+            <dialog class="grid__item-popup popup">
+              <div class="popup__box">
+                <img
+                  class="popup__box-img"
+                  src="/image/popup/popup__img-5.jpg"
+                  alt=""
+                />
+                <div class="popup__box-info box__info">
+                  <div class="box__info-flex">
+                    <h3 class="box__info-title">Ковка и литьё</h3>
+                    <button class="popup__box-btn-close">Закрыть</button>
+                  </div>
+                  <p class="box__info-text">
+                    Изготавливаем кованые изделия из металла на заказ по
+                    индивидуальным размерам. Наши мастера своего дела,
+                    умельцы-кузнецы, вкладывают в каждое из кованых изделий
+                    частичку своей души, своего настроения. Это настоящая ручная
+                    работа, на создание которой уходит много сил, времени и
+                    опыта. Создаем художественную ковку по индивидуальным
+                    проектам: заборы, ограды, кованые ворота, калитки, вывески,
+                    козырьки, садовые качели, беседки, флюгеры, кованые лестницы
+                    и перила, решетки, декор для ландшафта, люстры и подсвечники
+                    и многое другое. Кроме того, мы специализируемся на литье из
+                    латуни для создания высокохудожественных предметов для
+                    декора мебели и интерьера. Наша мощная технологическая база
+                    и собственный модельный цех, а также опытные профессионалы
+                    позволяют нам создавать эксклюзивные изделия с высокой
+                    детализацией и оригинальным декором. Мы также используем эти
+                    уникальные предметы для декорирования мебели, произведенной
+                    нашей компанией.
+                  </p>
+                </div>
+              </div>
+            </dialog>
+          </li>
+
+          <li class="products__grid-item grid__item">
+            <button type="button" class="grid__item-box">
+              <img
+                class="grid__item-img"
+                src="/image/grid__item-6.png"
+                alt=""
+              />
+              <h4 class="grid__item-title">Изделия из пенопласта</h4>
+            </button>
+
+            <dialog class="grid__item-popup popup">
+              <div class="popup__box">
+                <img
+                  class="popup__box-img"
+                  src="/image/popup/popup__img-6.jpg"
+                  alt=""
+                />
+                <div class="popup__box-info box__info">
+                  <div class="box__info-flex">
+                    <h3 class="box__info-title">Изделия из пенопласта</h3>
+                    <button class="popup__box-btn-close">Закрыть</button>
+                  </div>
+                  <p class="box__info-text">
+                    Изделия, которые изготавливаются из пенопласта, получаются
+                    очень легкими и достаточно надежными. При этом, они не
+                    разрушаются под воздействием неблагоприятных погодных
+                    условий или под воздействием температур, что позволяет
+                    использовать пенопластовые конструкции в течение длительного
+                    периода времени. Мы предлагаем изготовление декоративных
+                    элементов (шары, буквы, скульптуры), муляжей, элементов
+                    декора, сделанных из пенопласта. Изделия из пенопласта
+                    выполняем с помощью станков ЧПУ, обрабатываем жидкой
+                    штукатуркой для пенопласта либо наносится полимочевина, в
+                    качестве защиты от влаги, коррозии и износа. За тем изделие
+                    окрашивается
+                  </p>
+                </div>
+              </div>
+            </dialog>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__content">
+        <div class="about__left">
+          <!-- <img class="about__left-img" src="/image/about_img.png" alt="" /> -->
+        </div>
+        <div class="about__right">
+          <h2 class="about__right-title">О нас</h2>
+          <h3 class="about__right-subtitle">
+            Престиж Древ - искусство и мастерство в каждом изделии.
+          </h3>
+          <p class="about__right-text">
+            Мастерская "Престиж ДРЕВ" - это место, где искусство и мастерство
+            соединяются для создания неповторимых произведений из дерева и
+            металла. Наша команда состоит из опытных профессионалов, каждый из
+            которых является экспертом в своей области. Мы гордимся нашими
+            знаниями, опытом и стремлением к совершенству в каждом проекте.<br /><br />
+            Мы - это не просто мастерская, мы - сообщество творческих людей,
+            объединенных общей страстью к созданию уникальных изделий. Наша
+            философия заключается в том, чтобы не просто делать мебель или
+            декор, а создавать произведения искусства, которые будут радовать
+            наших клиентов долгие годы.<br /><br />
+            Мы готовы воплотить в жизнь ваши мечты и помочь вам создать уют и
+            красоту в вашем доме. Добро пожаловать в мастерскую "Престиж ДРЕВ",
+            где каждое изделие - это произведение искусства!
+          </p>
+          <a class="about__right-btn" href="#description">Приобрести</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantage">
+      <div class="advantages_container container">
+        <h2 class="advantages__title title">Наши преимущества</h2>
+        <ul class="advantages__grid">
+          <li class="advantages__item">
+            <div class="advantages__item-content">
+              <img
+                class="advantanges__item-img"
+                src="/image/advantages__item-1.svg"
+                alt=""
+              />
+              <h4 class="advantages__item-title">Широкий спектр услуг</h4>
+              <p class="advantages__item-text">
+                Мы предлагаем полный спектр услуг, начиная от изготовления
+                мебели и декора до ковки и литья из латуни.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-content">
+              <img
+                class="advantanges__item-img"
+                src="/image/advantages__item-2.svg"
+                alt=""
+              />
+              <h4 class="advantages__item-title">Индивидуальный подход</h4>
+              <p class="advantages__item-text">
+                Наши менеджеры всегда вежливые и профессиональные в работе с
+                клиентами, они готовы помочь с выбором нужной модели и ответить
+                на все вопросы клиента.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-content">
+              <img
+                class="advantanges__item-img"
+                src="/image/advantages__item-3.svg"
+                alt=""
+              />
+              <h4 class="advantages__item-title">Опыт и профессионализм</h4>
+              <p class="advantages__item-text">
+                С более чем десятилетним опытом работы в области изготовления
+                мебели, декора и других изделий, наша команда состоит из
+                настоящих экспертов своего дела.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-content">
+              <img
+                class="advantanges__item-img"
+                src="/image/advantages__item-4.svg"
+                alt=""
+              />
+              <h4 class="advantages__item-title">Быстрая и удобная доставка</h4>
+              <p class="advantages__item-text">
+                Наша оперативная и удобная доставка позволяет вам получить
+                заказанные товары быстро и без лишних хлопот, сохраняя ваше
+                время и комфорт.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-content">
+              <img
+                class="advantanges__item-img"
+                src="/image/advantages__item-5.svg"
+                alt=""
+              />
+              <h4 class="advantages__item-title">Прозрачность и надежность</h4>
+              <p class="advantages__item-text">
+                Мы ценим доверие клиентов и обеспечиваем прозрачность и
+                надежность. Предоставляем полную информацию о услугах и ценах,
+                избегая скрытых платежей и обеспечивая конфиденциальность
+                данных.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-content">
+              <img
+                class="advantanges__item-img"
+                src="/image/advantages__item-6.svg"
+                alt=""
+              />
+              <h4 class="advantages__item-title">
+                Высокое качество и надежность
+              </h4>
+              <p class="advantages__item-text">
+                Мы уделяем особое внимание качеству нашей продукции. Используя
+                только лучшие материалы и передовые технологии, мы гарантируем
+                безупречное исполнение и долговечность наших изделий.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A0d75f7dc1ffd66f6a029349924a3c91393af66fd9957a4681221fd63860ea51e&amp;source=constructor"
+        width="100%"
+        height="400"
+        frameborder="0"
+      ></iframe>
+      <!-- <div class="map__container container"></div> -->
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__container container">
+        <h2 class="portfolio__title title">Наши работы</h2>
+        <p class="portfolio__text">
+          Позвольте нам представить вам некоторые из наших самых выдающихся
+          проектов, которые мы реализовали для наших уважаемых клиентов. Каждое
+          из наших изделий является воплощением мастерства, творчества и
+          индивидуальности. От изысканных мебельных композиций до впечатляющих
+          элементов декора, наши работы отличаются изысканным дизайном,
+          безупречным качеством и вниманием к деталям. Погрузитесь в наш
+          портфолио и убедитесь сами в качестве и разнообразии наших проектов,
+          которые вдохновляют нас каждый день.
+        </p>
+        <ul class="portfolio__grid">
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-1.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-2.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-3.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-4.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-5.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-6.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-7.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-8.png"
+              alt=""
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__item-img"
+              src="/image/portfolio/grid__item-9.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__container container">
+        <img class="footer__logo" src="/image/logo.svg" alt="" />
+        <div class="footer__box">
+          <div class="footer__content-left content__left">
+            <ul class="content__left-list">
+              <li class="content__left-item">
+                <img
+                  class="content__left-img"
+                  src="/image/number__img.svg"
+                  alt=""
+                />
+                <a class="content__left-contact-tel" href="tel:+74999949099"
+                  >+7 (499) 994-90-99</a
+                >
+              </li>
+              <li class="content__left-item">
+                <img
+                  class="content__left-img"
+                  src="/image/footer__location.svg"
+                  alt=""
+                />
+                <h4 class="content__left-contact">
+                  Каменский район, Старая Станица, ул. Будённого, 267
+                </h4>
+              </li>
+              <li class="content__left-item">
+                <img
+                  class="content__left-img"
+                  src="/image/footer__email.svg"
+                  alt=""
+                />
+                <a
+                  class="content__left-contact"
+                  href="mailto:info@prestige-drev.ru"
+                  >info@prestige-drev.ru</a
+                >
+              </li>
+            </ul>
+            <div class="footer__social">
+              <a
+                class="footer__social-link-wt"
+                href="https://wa.me/+79604444341?text=Hi"
+                target="_blank"
+              >
+                <svg
+                  class="footer__social-img"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4884 14.5C3.4884 8.01721 8.79851 2.7619 15.3488 2.7619C21.8992 2.7619 27.2093 8.01721 27.2093 14.5C27.2093 20.9827 21.8992 26.238 15.3488 26.238C13.0155 26.238 10.8436 25.5727 9.01114 24.4236C8.6701 24.2098 8.25221 24.1527 7.86536 24.2669L3.84794 25.4535L5.36056 21.9506C5.53934 21.5366 5.50296 21.0624 5.26308 20.6799C4.13819 18.8859 3.4884 16.7701 3.4884 14.5ZM15.3488 0C7.25725 0 0.697704 6.49186 0.697704 14.5C0.697704 17.0383 1.3579 19.4276 2.51812 21.5051L0.112286 27.0763C-0.100396 27.5689 -0.00612359 28.1386 0.354169 28.5383C0.714462 28.9381 1.2758 29.0955 1.79441 28.9422L8.07267 27.088C10.2174 28.3046 12.7028 28.9999 15.3488 28.9999C23.4405 28.9999 30 22.5081 30 14.5C30 6.49186 23.4405 0 15.3488 0ZM18.5477 17.5138L16.7139 18.7921C15.8551 18.3079 14.9055 17.6321 13.9531 16.6895C12.9629 15.7095 12.2289 14.6979 11.6876 13.7699L12.853 12.7909C13.3531 12.3708 13.49 11.6626 13.1819 11.0894L11.697 8.32751C11.497 7.95561 11.1365 7.69437 10.7179 7.61806C10.2993 7.54177 9.86834 7.65875 9.54763 7.93575L9.10739 8.31601C8.04869 9.23046 7.42256 10.7332 7.9415 12.2547C8.47951 13.832 9.62767 16.3145 11.9798 18.6424C14.5104 21.1469 17.0809 22.1332 18.5841 22.5162C19.7953 22.8247 20.9414 22.4112 21.749 21.7599L22.5744 21.0943C22.9274 20.8097 23.1179 20.3723 23.0847 19.9228C23.0513 19.4733 22.7985 19.0681 22.4072 18.8374L20.0654 17.4564C19.5924 17.1776 18.998 17.2 18.5477 17.5138Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a
+                class="footer__social-link-vk"
+                href="https://vk.com/id740949041"
+                target="_blank"
+              >
+                <svg
+                  class="footer__social-img"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 0C6.93948 0 0 6.93948 0 15.5C0 24.0605 6.93948 31 15.5 31C24.0605 31 31 24.0605 31 15.5C31 6.93948 24.0605 0 15.5 0ZM21.461 17.4876C21.461 17.4876 22.8318 18.8406 23.1693 19.4686C23.179 19.4816 23.1838 19.4945 23.187 19.5009C23.3243 19.7318 23.3566 19.911 23.2888 20.0451C23.1757 20.2679 22.7882 20.3777 22.6558 20.3873H20.234C20.066 20.3873 19.7141 20.3437 19.2878 20.0499C18.9601 19.8206 18.6371 19.4444 18.3223 19.0779C17.8524 18.5322 17.4456 18.0607 17.0355 18.0607C16.9834 18.0606 16.9316 18.0688 16.8821 18.0849C16.5721 18.1851 16.1749 18.6274 16.1749 19.8061C16.1749 20.1742 15.8843 20.3857 15.6792 20.3857H14.57C14.1922 20.3857 12.224 20.2533 10.4803 18.4143C8.34578 16.162 6.42443 11.6444 6.40828 11.6024C6.28719 11.3102 6.53745 11.1535 6.81031 11.1535H9.25641C9.58255 11.1535 9.68911 11.3521 9.76338 11.5281C9.85057 11.7332 10.1703 12.5485 10.695 13.4656C11.5459 14.9607 12.0674 15.5678 12.4856 15.5678C12.564 15.5669 12.641 15.5469 12.71 15.5097C13.2557 15.2061 13.154 13.2606 13.1298 12.8569C13.1298 12.781 13.1282 11.9867 12.8489 11.6056C12.6486 11.3295 12.308 11.2246 12.1013 11.1858C12.1849 11.0704 12.2952 10.9768 12.4226 10.913C12.7972 10.7257 13.4721 10.6982 14.1421 10.6982H14.5151C15.2417 10.7079 15.429 10.7547 15.6921 10.8209C16.2249 10.9485 16.2362 11.2924 16.1894 12.4694C16.1749 12.8036 16.1604 13.1815 16.1604 13.6271C16.1604 13.724 16.1555 13.8273 16.1555 13.9371C16.1394 14.5361 16.12 15.2158 16.543 15.4952C16.5982 15.5298 16.662 15.5482 16.7271 15.5484C16.874 15.5484 17.3164 15.5484 18.5144 13.4931C18.8839 12.8315 19.205 12.144 19.4751 11.4361C19.4993 11.3941 19.5704 11.2649 19.6543 11.2149C19.7163 11.1833 19.785 11.1672 19.8545 11.1681H22.7301C23.0433 11.1681 23.2581 11.2149 23.2984 11.336C23.3695 11.5281 23.2855 12.1142 21.9729 13.8919L21.3868 14.6653C20.1968 16.2249 20.1968 16.3041 21.461 17.4876Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__content-right content__right">
+            <p class="content__right-text">
+              Мастерская «Престиж ДРЕВ» создает уникальные изделия из дерева и
+              металла любой сложности. Наш профессиональный коллектив готов
+              воплотить ваши индивидуальные заказы, придавая каждому изделию
+              эксклюзивный облик. Доверьте нам создание атмосферы в вашем доме!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
