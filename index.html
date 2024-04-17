@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
                 class="info__address-img"
               />
               <h4 class="info__adress-location">
-                Каменский район, Старая Станица, ул. Будённого, 267
+                Ростовская область, Каменский район, х.Старая Станица, ул. Будённого, 267
               </h4>
               <img
                 src="/image/partition.svg"
@@ -58,26 +58,84 @@
             <a class="header__logo" href="">
               <img class="header__link" src="/image/logo.svg" alt="logo" />
             </a>
-            <nav class="header__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#product" class="menu__link">Каталог продукции</a>
+
+            <button class="header__burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="header__burger-menu burger__menu">
+              <ul class="burger__menu-list menu__list">
+                <li class="burger__menu-item menu__item">
+                  <a href="#product" class="burger__menu-link menu__link"
+                    >Каталог продукции</a
+                  >
                 </li>
-                <li class="menu__item">
-                  <a href="#about" class="menu__link">О компании</a>
+                <li class="burger__menu-item menu__item">
+                  <a href="#about" class="burger__menu-link menu__link">О компании</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#advantage" class="menu__link">Полезно знать</a>
+                <li class="burger__menu-item menu__item">
+                  <a href="#advantage" class="burger__menu-link menu__link"
+                    >Полезно знать</a
+                  >
                 </li>
-                <li class="menu__item">
-                  <a href="#portfolio" class="menu__link">Портфолио</a>
+                <li class="burger__menu-item menu__item">
+                  <a href="#portfolio" class="burger__menu-link menu__link">Портфолио</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#footer" class="menu__link">Контакты</a>
+                <li class="burger__menu-item menu__item">
+                  <a href="#footer" class="burger__menu-link menu__link">Контакты</a>
                 </li>
               </ul>
-            </nav>
+
+              <div class="burger__menu-info header__up-info">
+                <div class="up__info-address info__address">
+              <img
+                src="/image/address__img.svg"
+                alt=""
+                class="info__address-img"
+              />
+              <h4 class="info__adress-location">
+                Ростовская область, Каменский район, х.Старая Станица, ул. Будённого, 267
+              </h4>
+            </div>
+            <div class="up__info-time info__time">
+              <img src="/image/time__img.svg" alt="" class="info__time-img" />
+              <h4 class="info__time-text">Режим работы: с 8:00 до 17:00</h4>
+              
+            </div>
+            <div class="up__info-number info__number">
+              <img
+                src="/image/number__img.svg"
+                alt=""
+                class="info__number-img"
+              />
+              <a href="tel:+79604444341" class="info__number-phone">
+                +7 (960) 444-43-41
+              </a>
+            </div>
+            <a class="up__info-ordered" id='callOrder' href="#description">Заказать звонок</a>
           </div>
+      </div>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#product" class="menu__link">Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="menu__link">О компании</a>
+          </li>
+          <li class="menu__item">
+            <a href="#advantage" class="menu__link">Полезно знать</a>
+          </li>
+          <li class="menu__item">
+            <a href="#portfolio" class="menu__link">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a href="#footer" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
         </div>
       </div>
     </header>
@@ -97,44 +155,44 @@
           </div>
 
           <div class="content__right">
-            <form action="" class="content__right-form form">
+            <form class="content__right-form form formMail">
               <h3 class="content__right-title">
                 Хотите узнать точную стоимость?
               </h3>
               <div class="form__name-box">
-                <label class="form__name-label" for="name">Ваше имя</label>
+                <label class="form__name-label" for="inputName">Ваше имя</label>
                 <input
                   class="form__name"
+                  id="inputName"
                   name="name"
                   type="text"
                   placeholder="Имя"
+                  autocomplete="off"
                 />
+                <h4 class="form__validate-name">Заполните имя</h4>
               </div>
               <div class="form__phone-box">
-                <label class="form__phone-label" for="number"
+                <label class="form__phone-label" for="inputNumber"
                   >Контактный телефон</label
                 >
                 <input
                   class="form__phone"
+                  id="inputNumber"
                   name="number"
                   type="text"
                   placeholder="+7 (___) ___ - __ - __"
+                  autocomplete="off"
                 />
+                <h4 class="form__validate-num">Заполните номер</h4>
+              </div>
+              <div class="form__validate">
+                <h4 class="form__validate-all">Заполните все поля</h4>
               </div>
               <div class="form__button-box">
-                <button class="form__button" type="submit">
+                <button class="form__button formMailBtn">
                   Отправить заявку
                 </button>
               </div>
-              <!-- <div class="form__policy">
-                <input type="checkbox" class="form__policy-checkbox" />
-                <p class="form__policy-text">
-                  Согласен
-                  <a class="form__policy-link" href=""
-                    >с политикой конфиденциальности</a
-                  >
-                </p>
-              </div> -->
             </form>
           </div>
         </div>
@@ -179,7 +237,7 @@
                     щит широко используется для изготовления лестниц,
                     подоконников, перекрытий, корпусной мебели, для отделки
                     интерьера. Мы производим сращенные и цельноламельные щиты из
-                    лиственных пород дерева: дуб, ясень, бук, ольха, липа.
+                    лиственных пород дерева: дуб, ясень, бук.
                   </p>
                 </div>
               </div>
@@ -311,7 +369,7 @@
                     использование разницы текстур стекла, с помощью добавки.
                     Витражами заполняют оконные или дверные проемы, межкомнатные
                     перегородки, витраж используется часто в шкафах-купе и
-                    кухонных фасадах. Так же с помощью витража можно создать
+                    кухонных фасадах. С помощью витража можно создать
                     уникальные рекламные вывески и потолки. Стоимость витража
                     зависит от сложности эскиза, количества мелких элементов и
                     наполненности рисунка цветом.
@@ -413,9 +471,7 @@
 
     <section class="about" id="about">
       <div class="about__content">
-        <div class="about__left">
-          <!-- <img class="about__left-img" src="/image/about_img.png" alt="" /> -->
-        </div>
+        <div class="about__left"></div>
         <div class="about__right">
           <h2 class="about__right-title">О нас</h2>
           <h3 class="about__right-subtitle">
@@ -432,8 +488,8 @@
             философия заключается в том, чтобы не просто делать мебель или
             декор, а создавать произведения искусства, которые будут радовать
             наших клиентов долгие годы.<br /><br />
-            Мы готовы воплотить в жизнь ваши мечты и помочь вам создать уют и
-            красоту в вашем доме. Добро пожаловать в мастерскую "Престиж ДРЕВ",
+            Мы готовы воплотить в жизнь ваши мечты и помочь создать уют и
+            красоту в доме. Добро пожаловать в мастерскую "Престиж ДРЕВ",
             где каждое изделие - это произведение искусства!
           </p>
           <a class="about__right-btn" href="#description">Приобрести</a>
@@ -548,21 +604,13 @@
         height="400"
         frameborder="0"
       ></iframe>
-      <!-- <div class="map__container container"></div> -->
     </section>
 
     <section class="portfolio" id="portfolio">
       <div class="portfolio__container container">
         <h2 class="portfolio__title title">Наши работы</h2>
         <p class="portfolio__text">
-          Позвольте нам представить вам некоторые из наших самых выдающихся
-          проектов, которые мы реализовали для наших уважаемых клиентов. Каждое
-          из наших изделий является воплощением мастерства, творчества и
-          индивидуальности. От изысканных мебельных композиций до впечатляющих
-          элементов декора, наши работы отличаются изысканным дизайном,
-          безупречным качеством и вниманием к деталям. Погрузитесь в наш
-          портфолио и убедитесь сами в качестве и разнообразии наших проектов,
-          которые вдохновляют нас каждый день.
+          Позвольте представить вам некоторые из наших самых выдающихся проектов, которые мы реализовали для уважаемых клиентов. Каждое из этих изделий является воплощением мастерства, творчества и индивидуальности. От элегантных мебельных композиций до впечатляющих элементов декора, наши работы отличаются изысканным дизайном, безупречным качеством и вниманием к деталям. Погрузитесь в портфолио и убедитесь сами в качестве и разнообразии проектов, которые вдохновляют нас каждый день.
         </p>
         <ul class="portfolio__grid">
           <li class="portfolio__item">
@@ -645,7 +693,7 @@
                   alt=""
                 />
                 <a class="content__left-contact-tel" href="tel:+74999949099"
-                  >+7 (499) 994-90-99</a
+                  >+7 (960) 444-43-41</a
                 >
               </li>
               <li class="content__left-item">
@@ -655,7 +703,7 @@
                   alt=""
                 />
                 <h4 class="content__left-contact">
-                  Каменский район, Старая Станица, ул. Будённого, 267
+                  Ростовская область, Каменский район, х.Старая Станица, ул. Будённого, 267
                 </h4>
               </li>
               <li class="content__left-item">
@@ -717,7 +765,7 @@
           <div class="footer__content-right content__right">
             <p class="content__right-text">
               Мастерская «Престиж ДРЕВ» создает уникальные изделия из дерева и
-              металла любой сложности. Наш профессиональный коллектив готов
+              металла любой сложности. Профессиональный коллектив готов
               воплотить ваши индивидуальные заказы, придавая каждому изделию
               эксклюзивный облик. Доверьте нам создание атмосферы в вашем доме!
             </p>
@@ -726,6 +774,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

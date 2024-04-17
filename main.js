@@ -1,6 +1,5 @@
 const gridItems = document.querySelectorAll(".grid__item");
 const body = document.querySelector("body");
-console.log(body);
 
 gridItems.forEach((item) => {
   const popup = item.querySelector(".grid__item-popup");
@@ -18,77 +17,92 @@ gridItems.forEach((item) => {
   });
 });
 
-// const popupList = document.querySelectorAll(".grid__item-popup");
+const header = document.querySelector(".header");
+const openBurger = header.querySelector(".header__burger-btn");
+const orderCall = header.querySelector("#callOrder");
 
-// for (let popup of popupList) {
-//   const close = popup.querySelector(".popup__box-btn");
-//   const product = popup.closest(".products__grid-item");
+const burgerList = header.querySelector(".burger__menu-list");
 
-//   product.addEventListener("click", function () {
-//     popup.showModal();
-//   });
+burgerList.addEventListener("click", function (event) {
+  let li = event.target.closest("li");
+  if (li) {
+    header.classList.remove("open");
+    body.classList.remove("over");
+  }
+});
 
-//   close.addEventListener("click", function () {
-//     popup.close();
-//   });
-// }
+orderCall.addEventListener("click", closeBurger);
 
-// const productList = document.querySelectorAll(".products__grid-item");
+openBurger.addEventListener("click", closeBurger);
 
-// const popup = document.querySelectorAll(".grid__item-popup");
+function closeBurger() {
+  if (!header.classList.contains("open")) {
+    header.classList.add("open");
+    body.classList.add("over");
+  } else {
+    header.classList.remove("open");
+    body.classList.remove("over");
+  }
+}
 
-// for (let product of productList) {
-//   const popupProduct = product.querySelector(".grid__item-popup");
-//   product.addEventListener("click", function () {
-//     popupProduct.showModal();
-//   });
-// }
+const inputName = document.querySelector("#inputName");
+const inputNum = document.querySelector("#inputNumber");
+const formBtn = document.querySelector(".form__button");
+const validate = document.querySelector(".form__validate");
 
-// for (let modal of popup) {
-//   const close = modal.querySelector(".popup__box-btn");
-//   close.addEventListener("click", function () {
-//     modal.close();
-//   });
-// }
+const validName = document.querySelector(".form__validate-name");
+const validNum = document.querySelector(".form__validate-num");
+const validAll = document.querySelector(".form__validate-all");
 
-// class Modal {
-//   constructor(type) {
-//     this.type = type;
-//     this.modal = document.querySelector(".Modal[data-type=" + this.type + "]");
-//     this.modalBtns = document.querySelectorAll(
-//       ".ModalBtn[data-type=" + this.type + "]"
-//     );
-//     this.modalBtnsClose = this.modal.querySelectorAll(".ModalBtn");
-//     // this.FormFields = this.modal.querySelectorAll(".FormField");
+formBtn.addEventListener("click", async function (event) {
+  event.preventDefault();
+  if (!inputName.value && inputNum.value) {
+    validName.classList.add("validate__active");
+  }
+  if ((!inputNum.value || inputName.value.length > 13) && inputName.value) {
+    validNum.classList.add("validate__active");
+  }
 
-//     this.#init();
-//   }
-//   #init() {
-//     this.#defaultEvents();
-//   }
-//   #defaultEvents() {
-//     this.modalBtns.forEach((btn) => {
-//       btn.addEventListener("click", (e) => {
-//         this.open();
-//       });
-//     });
-//     this.modalBtnsClose.forEach((btn) => {
-//       btn.addEventListener("click", (e) => {
-//         this.close();
-//       });
-//     });
-//     // this.FormFields.forEach((FormField) => {
-//     //   FormField.addEventListener("input", (e) => {
-//     //     FormField.classList.remove("__error");
-//     //   });
-//     // });
-//   }
-//   open() {
-//     this.modal.classList.add("__active");
-//     document.body.classList.add("__modal_open");
-//   }
-//   close() {
-//     this.modal.classList.remove("__active");
-//     document.body.classList.remove("__modal_open");
-//   }
-// }
+  if (!inputName.value && !inputNum.value) {
+    validAll.classList.add("validate__active");
+  }
+
+  if (inputName.value && inputNum.value) {
+    validName.classList.remove("validate__active");
+    validNum.classList.remove("validate__active");
+    validAll.classList.remove("validate__active");
+  }
+});
+
+async function request(url = "", data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+      "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: "follow", // manual, *follow, error
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+const formMailBtn = document
+  .querySelector(".formMailBtn")
+  .addEventListener("click", function () {
+    const data = {
+      name: inputName.value,
+      number: inputNum.value,
+    };
+
+    request("/mail.php", data).then((response) => {
+      console.log(response);
+    });
+    console.log(1);
+    location.reload();
+  });
